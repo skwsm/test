@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My 1st stanza</title>
+    <script type="module" src="./my-1st-stanza.js" async></script>
+    <link rel="stylesheet" href="./togostanza.css">
+  </head>
+
+  <body>
+    <div id="contents">
+      <h1 class="page_ttl">
+        My 1st stanza
+      </h1>
+
+      <ul class="showcase_icn">
+          <li>Gene</li>
+
+          <li>Text</li>
+
+          <li>MIT</li>
+      </ul>
+
+      <p class="lead">
+        &lt;togostanza-my-1st-stanza&gt;&lt;/togostanza-my-1st-stanza&gt;
+      </p>
+
+      <div class="showcase_detail">
+        <ul class="showcase_id">
+            <li>
+              <dl>
+                <dt></dt>
+
+                <dd>
+                  <p class="id_box">
+                    <input type="text" value=world data-param-key=say-to>
+
+                  </p>
+
+                  <p class="eg">
+                    who to say hello to
+                  </p>
+                </dd>
+              </dl>
+            </li>
+        </ul>
+
+        <div class="showcase_code">
+          <code>&lt;togostanza-my-1st-stanza&gt;&lt;/togostanza-my-1st-stanza&gt;</code>
+        </div>
+
+        <p class="explain">
+          The above element will automatically embed the following Stanza in your HTML page.
+        </p>
+
+        <div class="showcase_box">
+          <togostanza-my-1st-stanza></togostanza-my-1st-stanza>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const stanza = document.querySelector('togostanza-my-1st-stanza');
+      const inputs = document.querySelectorAll('.showcase_id input');
+
+      for (const input of inputs) {
+        function onParamChange() {
+          stanza.setAttribute(input.dataset.paramKey, input.value);
+        }
+
+        input.addEventListener('input', onParamChange);
+        onParamChange();
+      }
+    </script>
+  </body>
+</html>
