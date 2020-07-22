@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "my-1st-stanza",
+  "stanza:label": "My 1st stanza",
+  "stanza:definition": "My 1st stanza",
+  "stanza:parameter": [
+    {
+      "stanza:key": "say-to",
+      "stanza:example": "world",
+      "stanza:description": "who to say hello to",
+      "stanza:required": false
+    }
+  ],
+  "stanza:usage": "<togostanza-my-1st-stanza></togostanza-my-1st-stanza>",
+  "stanza:type": "Stanza",
+  "stanza:context": "Gene",
+  "stanza:display": "Text",
+  "stanza:provider": "DBCLS",
+  "stanza:license": "MIT",
+  "stanza:author": "Shuichi Kawashima",
+  "stanza:address": "shuichi.kawashima@gmail.com",
+  "stanza:contributor": [],
+  "stanza:created": "2020-07-22",
+  "stanza:updated": "2020-07-22"
+}
